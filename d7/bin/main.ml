@@ -112,8 +112,7 @@ module Solution2 = struct
       Z.zero
 end
 
-let input_path =
-  if Sys.file_exists "input.txt" then "input.txt" else "bin/input.txt"
+let input_path = "input.txt"
 
 let input_file = open_in input_path
 let () = Solution1.solve input_file |> string_of_int |> print_endline
