@@ -146,8 +146,7 @@ module Solution2 = struct
     loop 0 edges
 end
 
-let input_path =
-  if Sys.file_exists "input.txt" then "input.txt" else "bin/input.txt"
+let input_path = "input.txt"
 
 let res = parse @@ open_in input_path
 
